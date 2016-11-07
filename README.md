@@ -1,6 +1,6 @@
 # Laravel Braintree
 
-> A [Braintree](https://braintree.com) bridge for Laravel.
+> A [Braintree](https://www.braintreepayments.com) bridge for Laravel.
 
 ## Installation
 
