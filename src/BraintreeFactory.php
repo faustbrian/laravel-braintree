@@ -1,5 +1,14 @@
 <?php
 
+/*
+ * This file is part of Laravel Braintree.
+ *
+ * (c) Brian Faust <hello@brianfaust.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace BrianFaust\Braintree;
 
 use InvalidArgumentException;
@@ -35,7 +44,7 @@ class BraintreeFactory
         $keys = ['environment', 'merchant_id', 'public_key', 'private_key'];
 
         foreach ($keys as $key) {
-            if (!array_key_exists($key, $config)) {
+            if (! array_key_exists($key, $config)) {
                 throw new InvalidArgumentException("Missing configuration key [$key].");
             }
         }
