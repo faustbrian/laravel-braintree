@@ -54,7 +54,7 @@ class BraintreeManager extends AbstractManager
      *
      * @return mixed
      */
-    protected function createConnection(array $config)
+    protected function createConnection(array $config): Braintree
     {
         return $this->factory->make($config);
     }
@@ -64,7 +64,7 @@ class BraintreeManager extends AbstractManager
      *
      * @return string
      */
-    protected function getConfigName()
+    protected function getConfigName(): string
     {
         return 'braintree';
     }
@@ -74,7 +74,7 @@ class BraintreeManager extends AbstractManager
      *
      * @return \BrianFaust\Braintree\BraintreeFactory
      */
-    public function getFactory()
+    public function getFactory(): BraintreeFactory
     {
         return $this->factory;
     }

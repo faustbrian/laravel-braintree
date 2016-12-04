@@ -34,7 +34,7 @@ class BraintreeFactory
      *
      * @return \Braintree\Braintree
      */
-    public function make(array $config)
+    public function make(array $config): Braintree
     {
         $config = $this->getConfig($config);
 
@@ -50,7 +50,7 @@ class BraintreeFactory
      *
      * @return array
      */
-    protected function getConfig(array $config)
+    protected function getConfig(array $config): array
     {
         $keys = ['environment', 'merchant_id', 'public_key', 'private_key'];
 
@@ -70,7 +70,7 @@ class BraintreeFactory
      *
      * @return \Braintree\Braintree
      */
-    protected function getClient(array $auth)
+    protected function getClient(array $auth): Braintree
     {
         Configuration::environment($auth['environment']);
         Configuration::merchantId($auth['merchant_id']);

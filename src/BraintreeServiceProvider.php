@@ -52,7 +52,7 @@ class BraintreeServiceProvider extends ServiceProvider
     /**
      * Register the factory class.
      */
-    protected function registerFactory()
+    protected function registerFactory(): void
     {
         $this->app->singleton('braintree.factory', function () {
             return new BraintreeFactory();
@@ -64,7 +64,7 @@ class BraintreeServiceProvider extends ServiceProvider
     /**
      * Register the manager class.
      */
-    protected function registerManager()
+    protected function registerManager(): void
     {
         $this->app->singleton('braintree', function (Container $app) {
             $config = $app['config'];
@@ -79,7 +79,7 @@ class BraintreeServiceProvider extends ServiceProvider
     /**
      * Register the bindings.
      */
-    protected function registerBindings()
+    protected function registerBindings(): void
     {
         $this->app->bind('braintree.connection', function (Container $app) {
             $manager = $app['braintree'];
