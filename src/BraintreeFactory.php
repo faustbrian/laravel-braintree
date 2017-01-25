@@ -77,6 +77,6 @@ class BraintreeFactory
         Configuration::publicKey($auth['public_key']);
         Configuration::privateKey($auth['private_key']);
 
-        return new Braintree($auth['key']);
+        return new Braintree();
     }
 }
