@@ -12,18 +12,6 @@ Require this package, with [Composer](https://getcomposer.org/), in the root dir
 $ composer require faustbrian/laravel-braintree
 ```
 
-Add the service provider to `config/app.php` in the `providers` array.
-
-```php
-BrianFaust\Braintree\BraintreeServiceProvider::class
-```
-
-If you want you can use the [facade](http://laravel.com/docs/facades). Add the reference in `config/app.php` to your aliases array.
-
-```php
-'Braintree' => BrianFaust\Braintree\Facades\Braintree::class
-```
-
 ## Configuration
 
 Laravel Braintree requires connection configuration. To get started, you'll need to publish all vendor assets:
@@ -136,19 +124,11 @@ App::make('Foo')->bar($params);
 
 There are other classes in this package that are not documented here. This is because the package is a Laravel wrapper of [the official Braintree package](https://github.com/braintree/braintree_php).
 
-## Changelog
-
-Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
-
 ## Testing
 
 ``` bash
 $ phpunit
 ```
-
-## Contributing
-
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## Security
 

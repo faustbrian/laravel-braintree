@@ -1,8 +1,5 @@
 <?php
 
-
-declare(strict_types=1);
-
 /*
  * This file is part of Laravel Braintree.
  *
@@ -58,7 +55,7 @@ class BraintreeManager extends AbstractManager
      */
     protected function getConfigName(): string
     {
-        return 'braintree';
+        return 'laravel-braintree';
     }
 
     /**

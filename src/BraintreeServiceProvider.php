@@ -1,8 +1,5 @@
 <?php
 
-
-declare(strict_types=1);
-
 /*
  * This file is part of Laravel Braintree.
  *
@@ -22,29 +19,31 @@ class BraintreeServiceProvider extends ServiceProvider
     /**
      * Boot the service provider.
      */
-    public function boot(): void
+    public function boot()
     {
-        $source = realpath(__DIR__.'/../config/braintree.php');
-
-        $this->publishes([$source => config_path('braintree.php')]);
-
-        $this->mergeConfigFrom($source, 'braintree');
+        $this->publishes([
+            __DIR__.'/../config/braintree.php' => config_path('braintree.php'),
+        ]);
     }
 
     /**
      * Register the service provider.
      */
-    public function register(): void
+    public function register()
     {
+        $this->mergeConfigFrom(__DIR__.'/../config/braintree.php', 'braintree');
+
         $this->registerFactory();
+
         $this->registerManager();
+
         $this->registerBindings();
     }
 
     /**
      * Register the factory class.
      */
-    protected function registerFactory(): void
+    protected function registerFactory()
     {
         $this->app->singleton('braintree.factory', function () {
             return new BraintreeFactory();
@@ -56,7 +55,7 @@ class BraintreeServiceProvider extends ServiceProvider
     /**
      * Register the manager class.
      */
-    protected function registerManager(): void
+    protected function registerManager()
     {
         $this->app->singleton('braintree', function (Container $app) {
             $config = $app['config'];
@@ -71,7 +70,7 @@ class BraintreeServiceProvider extends ServiceProvider
     /**
      * Register the bindings.
      */
-    protected function registerBindings(): void
+    protected function registerBindings()
     {
         $this->app->bind('braintree.connection', function (Container $app) {
             $manager = $app['braintree'];
