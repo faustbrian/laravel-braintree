@@ -40,14 +40,14 @@ return [
         'main' => [
             'environment' => 'production',
             'merchant_id' => 'your-merchant-id',
-            'public_key' => 'your-public-key',
+            'public_key'  => 'your-public-key',
             'private_key' => 'your-private-key',
         ],
 
         'sandbox' => [
             'environment' => 'sandbox',
             'merchant_id' => 'your-sandbox-merchant-id',
-            'public_key' => 'your-sandbox-public-key',
+            'public_key'  => 'your-sandbox-public-key',
             'private_key' => 'your-sandbox-private-key',
         ],
 
