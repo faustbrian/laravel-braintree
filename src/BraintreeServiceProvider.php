@@ -11,8 +11,8 @@
 
 namespace BrianFaust\Braintree;
 
-use Illuminate\Contracts\Container\Container;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Contracts\Container\Container;
 
 class BraintreeServiceProvider extends ServiceProvider
 {
