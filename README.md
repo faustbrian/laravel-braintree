@@ -1,7 +1,5 @@
 # Laravel Braintree
 
-I would appreciate you taking the time to look at my [Patreon](https://www.patreon.com/faustbrian) and considering to support me if I'm saving you some time with my work.
-
 > A [Braintree](https://www.braintreepayments.com) bridge for Laravel.
 
 ## Installation
@@ -132,7 +130,7 @@ $ phpunit
 
 ## Security
 
-If you discover a security vulnerability within this package, please send an e-mail to Brian Faust at hello@brianfaust.de. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within this package, please send an e-mail to Brian Faust at hello@brianfaust.me. All security vulnerabilities will be promptly addressed.
 
 ## Credits
 
@@ -141,4 +139,4 @@ If you discover a security vulnerability within this package, please send an e-m
 
 ## License
 
-[MIT](LICENSE) © [Brian Faust](https://brianfaust.de)
+[MIT](LICENSE) © [Brian Faust](https://brianfaust.me)
