@@ -39,7 +39,7 @@
         },
         "laravel": {
             "providers": [
-                "BrianFaust\\Braintree\\DebugbarServiceProvider"
+                "BrianFaust\\Braintree\\BraintreeServiceProvider"
             ],
             "aliases": {
                 "Braintree": "BrianFaust\\Braintree\\Facades\\Braintree"
