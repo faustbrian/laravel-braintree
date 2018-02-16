@@ -1,5 +1,10 @@
 # Laravel Braintree
 
+[![Build Status](https://img.shields.io/travis/faustbrian/Laravel-Braintree/master.svg?style=flat-square)](https://travis-ci.org/faustbrian/Laravel-Braintree)
+[![PHP from Packagist](https://img.shields.io/packagist/php-v/faustbrian/laravel-braintree.svg?style=flat-square)]()
+[![Latest Version](https://img.shields.io/github/release/faustbrian/Laravel-Braintree.svg?style=flat-square)](https://github.com/faustbrian/Laravel-Braintree/releases)
+[![License](https://img.shields.io/packagist/l/faustbrian/Laravel-Braintree.svg?style=flat-square)](https://packagist.org/packages/faustbrian/Laravel-Braintree)
+
 > A [Braintree](https://www.braintreepayments.com) bridge for Laravel.
 
 ## Installation
@@ -130,7 +135,7 @@ $ phpunit
 
 ## Security
 
-If you discover a security vulnerability within this package, please send an e-mail to Brian Faust at hello@brianfaust.me. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within this package, please send an e-mail to hello@brianfaust.me. All security vulnerabilities will be promptly addressed.
 
 ## Credits
 
