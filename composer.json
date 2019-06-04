@@ -1,13 +1,20 @@
 {
     "name": "artisanry/braintree",
     "description": "A Braintree bridge for Laravel",
-    "keywords": ["laravel", "framework", "Laravel-Braintree", "Laravel Braintree"],
+    "keywords": [
+        "laravel",
+        "framework",
+        "Laravel-Braintree",
+        "Laravel Braintree"
+    ],
     "license": "MIT",
-    "authors": [{
-        "name": "Brian Faust",
-        "email": "hello@basecode.sh",
-        "homepage": "https://basecode.sh"
-    }],
+    "authors": [
+        {
+            "name": "Brian Faust",
+            "email": "hello@basecode.sh",
+            "homepage": "https://basecode.sh"
+        }
+    ],
     "require": {
         "php": "^7.2",
         "illuminate/support": "^5.8",
