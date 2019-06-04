@@ -5,13 +5,13 @@ declare(strict_types=1);
 /*
  * This file is part of Laravel Braintree.
  *
- * (c) Brian Faust <hello@brianfaust.de>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Braintree;
+namespace Artisanry\Braintree;
 
 use GrahamCampbell\Manager\AbstractManager;
 use Illuminate\Contracts\Config\Repository;
@@ -21,7 +21,7 @@ class BraintreeManager extends AbstractManager
     /**
      * The factory instance.
      *
-     * @var \BrianFaust\Braintree\BraintreeFactory
+     * @var \Artisanry\Braintree\BraintreeFactory
      */
     private $factory;
 
@@ -29,7 +29,7 @@ class BraintreeManager extends AbstractManager
      * Create a new Braintree manager instance.
      *
      * @param \Illuminate\Contracts\Config\Repository $config
-     * @param \BrianFaust\Braintree\BraintreeFactory  $factory
+     * @param \Artisanry\Braintree\BraintreeFactory  $factory
      */
     public function __construct(Repository $config, BraintreeFactory $factory)
     {
@@ -63,7 +63,7 @@ class BraintreeManager extends AbstractManager
     /**
      * Get the factory instance.
      *
-     * @return \BrianFaust\Braintree\BraintreeFactory
+     * @return \Artisanry\Braintree\BraintreeFactory
      */
     public function getFactory(): BraintreeFactory
     {

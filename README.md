@@ -1,9 +1,9 @@
 # Laravel Braintree
 
-[![Build Status](https://img.shields.io/travis/faustbrian/Laravel-Braintree/master.svg?style=flat-square)](https://travis-ci.org/faustbrian/Laravel-Braintree)
-[![PHP from Packagist](https://img.shields.io/packagist/php-v/faustbrian/laravel-braintree.svg?style=flat-square)]()
-[![Latest Version](https://img.shields.io/github/release/faustbrian/Laravel-Braintree.svg?style=flat-square)](https://github.com/faustbrian/Laravel-Braintree/releases)
-[![License](https://img.shields.io/packagist/l/faustbrian/Laravel-Braintree.svg?style=flat-square)](https://packagist.org/packages/faustbrian/Laravel-Braintree)
+[![Build Status](https://img.shields.io/travis/artisanry/Braintree/master.svg?style=flat-square)](https://travis-ci.org/artisanry/Braintree)
+[![PHP from Packagist](https://img.shields.io/packagist/php-v/artisanry/braintree.svg?style=flat-square)]()
+[![Latest Version](https://img.shields.io/github/release/artisanry/Braintree.svg?style=flat-square)](https://github.com/artisanry/Braintree/releases)
+[![License](https://img.shields.io/packagist/l/artisanry/Braintree.svg?style=flat-square)](https://packagist.org/packages/artisanry/Braintree)
 
 > A [Braintree](https://www.braintreepayments.com) bridge for Laravel.
 
@@ -12,7 +12,7 @@
 Require this package, with [Composer](https://getcomposer.org/), in the root directory of your project.
 
 ```bash
-$ composer require faustbrian/laravel-braintree
+$ composer require artisanry/braintree
 ```
 
 ## Configuration
@@ -20,7 +20,7 @@ $ composer require faustbrian/laravel-braintree
 Laravel Braintree requires connection configuration. To get started, you'll need to publish all vendor assets:
 
 ```bash
-$ php artisan vendor:publish --provider="BrianFaust\Braintree\BraintreeServiceProvider"
+$ php artisan vendor:publish --provider="Artisanry\Braintree\BraintreeServiceProvider"
 ```
 
 This will create a `config/braintree.php` file in your app that you can modify to set your configuration. Also, make sure you check for changes to the original config file in this package between releases.
@@ -53,7 +53,7 @@ Here you can see an example of just how simple this package is to use. Out of th
 
 ```php
 // You can alias this in config/app.php.
-use BrianFaust\Braintree\Facades\Braintree;
+use Artisanry\Braintree\Facades\Braintree;
 
 Braintree::getTransaction()->sale([
     'amount' => '10.00',
@@ -66,7 +66,7 @@ Braintree::getTransaction()->sale([
 The Braintree manager will behave like it is a `Braintree\Braintree`. If you want to call specific connections, you can do that with the connection method:
 
 ```php
-use BrianFaust\Braintree\Facades\Braintree;
+use Artisanry\Braintree\Facades\Braintree;
 
 // Writing this…
 Braintree::connection('main')->getCharge()->([
@@ -99,7 +99,7 @@ Braintree::setDefaultConnection('alternative'); // The default is now alternativ
 If you prefer to use dependency injection over facades like me, then you can inject the manager:
 
 ```php
-use BrianFaust\Braintree\BraintreeManager;
+use Artisanry\Braintree\BraintreeManager;
 
 class Foo
 {
@@ -135,7 +135,7 @@ $ phpunit
 
 ## Security
 
-If you discover a security vulnerability within this package, please send an e-mail to hello@brianfaust.me. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within this package, please send an e-mail to hello@basecode.sh. All security vulnerabilities will be promptly addressed.
 
 ## Credits
 
@@ -144,4 +144,4 @@ If you discover a security vulnerability within this package, please send an e-m
 
 ## License
 
-[MIT](LICENSE) © [Brian Faust](https://brianfaust.me)
+[MIT](LICENSE) © [Brian Faust](https://basecode.sh)

@@ -1,12 +1,12 @@
 {
-    "name": "faustbrian/laravel-braintree",
+    "name": "artisanry/braintree",
     "description": "A Braintree bridge for Laravel",
-    "keywords": ["laravel", "framework", "Laravel-Braintree", "Laravel Braintree", "Brian Faust", "faustbrian"],
+    "keywords": ["laravel", "framework", "Laravel-Braintree", "Laravel Braintree"],
     "license": "MIT",
     "authors": [{
         "name": "Brian Faust",
-        "email": "hello@brianfaust.me",
-        "homepage": "https://brianfaust.me"
+        "email": "hello@basecode.sh",
+        "homepage": "https://basecode.sh"
     }],
     "require": {
         "php": "^7.2",
@@ -21,12 +21,12 @@
     },
     "autoload": {
         "psr-4": {
-            "BrianFaust\\Braintree\\": "src/"
+            "Artisanry\\Braintree\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BrianFaust\\Tests\\Braintree\\": "tests"
+            "Artisanry\\Tests\\Braintree\\": "tests"
         }
     },
     "config": {
@@ -39,10 +39,10 @@
         },
         "laravel": {
             "providers": [
-                "BrianFaust\\Braintree\\BraintreeServiceProvider"
+                "Artisanry\\Braintree\\BraintreeServiceProvider"
             ],
             "aliases": {
-                "Braintree": "BrianFaust\\Braintree\\Facades\\Braintree"
+                "Braintree": "Artisanry\\Braintree\\Facades\\Braintree"
             }
         }
     },
