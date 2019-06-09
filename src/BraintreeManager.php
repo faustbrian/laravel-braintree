@@ -29,7 +29,7 @@ class BraintreeManager extends AbstractManager
      * Create a new Braintree manager instance.
      *
      * @param \Illuminate\Contracts\Config\Repository $config
-     * @param \Artisanry\Braintree\BraintreeFactory  $factory
+     * @param \Artisanry\Braintree\BraintreeFactory   $factory
      */
     public function __construct(Repository $config, BraintreeFactory $factory)
     {
